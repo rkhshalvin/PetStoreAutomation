@@ -25,7 +25,7 @@ public class UserEndPoint2 {
 //	##############CREATE-USER##############
 	public static Response createUsers(User payload) {
 		
-		String post_url = getURL().getString("post_url");
+		String post_url = getURL().getString("user_post_url");
 
 		Response response = given()
 				.contentType(ContentType.JSON)
@@ -39,7 +39,7 @@ public class UserEndPoint2 {
 //	##############READ-USER##############
 	public static Response readUser(String userName) {
 		
-		String get_url = getURL().getString("get_url");
+		String get_url = getURL().getString("user_get_url");
 		
 		Response response = given()
 				.pathParam("username", userName)
@@ -51,7 +51,7 @@ public class UserEndPoint2 {
 //	##############UPDATE-USER##############
 	public static Response updateUser(String userName, User payload ) {
 		
-		String put_url = getURL().getString("put_url");
+		String put_url = getURL().getString("user_put_url");
 
 		Response response = given()
 				.contentType(ContentType.JSON)
@@ -66,7 +66,7 @@ public class UserEndPoint2 {
 //	##############DELETE-USER##############
 	public static Response deleteUser(String userName) {
 		
-		String delete_url = getURL().getString("delete_url");
+		String delete_url = getURL().getString("user_delete_url");
 
 		Response response = given()
 				.pathParam("username", userName)

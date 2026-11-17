@@ -1,7 +1,8 @@
 package api.payloads;
 
 public class User {
-	
+	int userStatus = 0;
+	int id;
 	String username;
 	String firstName;
 	String lastName;
@@ -10,9 +11,7 @@ public class User {
 	String phone;
 	
 	
-	int userStatus = 0;
-
-	int id;
+	
 	public int getId() {
 		return id;
 	}

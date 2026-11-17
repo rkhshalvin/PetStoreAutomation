@@ -12,11 +12,12 @@ package api.endpoints;
  */
 
 
-public class Routes {
+public class UserRoutes {
 	
 	public static String base_url = "https://petstore.swagger.io/v2";
 	
 	//###########USER MODULE###########
+	
 	public static String post_url = base_url+"/user";
 	public static String get_url = base_url+"/user/{username}";
 	public static String put_url = base_url+"/user/{username}";
